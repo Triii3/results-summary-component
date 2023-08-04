@@ -14,16 +14,25 @@
   body {
     height: 100vh;
     display: flex;
+    text-align: center;
+    font-family: "Hanken Grotesk", sans-serif;
   }
+
   main {
   }
+
   main .results {
-    text-align: center;
+    background-color: hsl(252, 100%, 67%);
+  }
+
+  main .results .circle {
+    background-color: hsla(256, 72%, 46%, 1);
+    border-radius: 500px;
+    padding: 10px;
   }
 
   main .summaries {
     width: 100%;
     margin-right: 0;
-    text-align: center;
   }
 }
