@@ -7,11 +7,23 @@
 }
 
 @media screen and (max-width: 375px) {
-  body {
-    height: 100vh;
-    width: 100vw;
-  }
   main p {
     font-size: 18px;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+  }
+  main {
+  }
+  main .results {
+    text-align: center;
+  }
+
+  main .summaries {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
   }
 }
