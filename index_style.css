@@ -1,30 +1,29 @@
-@media screen and (max-width: 375px) {
-  p {
-    font-size: 18px;
-    font-weight: 800;
-    opacity: 0.8;
-  }
-  main .results h1,
-  main .results .text-results p {
-    color: hsl(241, 100%, 89%);
-  }
+p {
+  font-size: 18px;
+  font-weight: 800;
+  opacity: 0.8;
+}
+main .results h1,
+main .results .text-results p {
+  color: hsl(241, 100%, 89%);
+}
 
-  main .results p {
-    color: hsla(241, 100%, 89%, 0.5);
-  }
+main .results p {
+  color: hsla(241, 100%, 89%, 0.5);
+}
 
-  main .results h2,
-  main .results h3 {
-    color: hsl(0, 0%, 100%);
-  }
+main .results h2,
+main .results h3 {
+  color: hsl(0, 0%, 100%);
+}
 
-  body {
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*
+body {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -33,170 +32,169 @@
     - these four attributes help center all the elements to the 
     center of the desktop-view
     */
-  }
+}
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*
     display: flex;
     align-items: center;
 
     - centers the widths of child-elements and not starting from 
     the left (default)
     */
-    font-family: "Hanken Grotesk", sans-serif;
-  }
+  font-family: "Hanken Grotesk", sans-serif;
+}
 
-  main .results {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    /* most of the text child-elements are centered*/
-    border-radius: 0 0 30px 30px;
-  }
+main .results {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  /* most of the text child-elements are centered*/
+  border-radius: 0 0 30px 30px;
+}
 
-  main .results h1 {
-    font-size: 1rem;
-    font-weight: 500;
-  }
+main .results h1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
 
-  main .results .circle-container {
-    width: 130px;
-    height: 130px;
-    /*
+main .results .circle-container {
+  width: 130px;
+  height: 130px;
+  /*
     using percentage for height and width won't work
     since both axis are not equal
     */
-    border-radius: 50%;
-    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-  }
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
 
-  main .results .circle-container .circle h2 {
-    font-size: 3rem;
-    margin: 20px 20px 0;
-  }
+main .results .circle-container .circle h2 {
+  font-size: 3rem;
+  margin: 20px 20px 0;
+}
 
-  main .results .circle-container .circle p {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 500;
-  }
+main .results .circle-container .circle p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
 
-  main .results .text-results {
-    width: 80%;
-    font-size: 1.2rem;
-  }
+main .results .text-results {
+  width: 80%;
+  font-size: 1.2rem;
+}
 
-  main .results .text-results h3 {
-    margin-bottom: 0;
-  }
+main .results .text-results h3 {
+  margin-bottom: 0;
+}
 
-  main .results .text-results p {
-    margin-top: 10px;
-    font-weight: 500;
-  }
+main .results .text-results p {
+  margin-top: 10px;
+  font-weight: 500;
+}
 
-  /* summary section */
-  main .summaries h2 {
-    font-weight: 800;
-    font-size: 1.2rem;
-  }
+/* summary section */
+main .summaries h2 {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
 
-  main .summaries p span {
-    color: black;
-  }
-  main .summaries p {
-    color: hsl(224, 30%, 27%);
-  }
-  .reaction,
-  .memory,
-  .verbal,
-  .visual {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    /*
+main .summaries p span {
+  color: black;
+}
+main .summaries p {
+  color: hsl(224, 30%, 27%);
+}
+.reaction,
+.memory,
+.verbal,
+.visual {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  /*
     flex arranges the child-elements in a row (default)
     justify-content puts them on each end with a huge space between horizontally
     */
-    align-items: center;
-    padding: 0px 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-  }
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
 
-  .left-side {
-    display: flex;
-    column-gap: 10px;
-    opacity: 0.7;
-  }
+.left-side {
+  display: flex;
+  column-gap: 10px;
+  opacity: 0.7;
+}
 
-  main .summaries {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-  }
+main .summaries {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
 
-  main .summaries h2 {
-    color: hsl(224, 30%, 27%);
-  }
+main .summaries h2 {
+  color: hsl(224, 30%, 27%);
+}
 
-  /* reaction summary section */
-  main .summaries .reaction h4 {
-    color: hsl(0, 100%, 67%);
-  }
+/* reaction summary section */
+main .summaries .reaction h4 {
+  color: hsl(0, 100%, 67%);
+}
 
-  main .summaries .reaction {
-    background-color: hsla(0, 100%, 67%, 0.1);
-    /*
+main .summaries .reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  /*
     hsla(~, ~, ~, *opacity*);
     - helps match the colour variation of the text
     */
-  }
+}
 
-  /* memory summary section */
-  main .summaries .memory h4 {
-    color: hsl(39, 100%, 56%);
-  }
+/* memory summary section */
+main .summaries .memory h4 {
+  color: hsl(39, 100%, 56%);
+}
 
-  main .summaries .memory {
-    background-color: hsla(39, 100%, 56%, 0.1);
-  }
+main .summaries .memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
 
-  /* verbal summary section */
-  main .summaries .verbal h4 {
-    color: hsl(166, 100%, 37%);
-  }
+/* verbal summary section */
+main .summaries .verbal h4 {
+  color: hsl(166, 100%, 37%);
+}
 
-  main .summaries .verbal {
-    background-color: hsla(166, 100%, 37%, 0.1);
-  }
+main .summaries .verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
 
-  /* visual summary section */
-  main .summaries .visual h4 {
-    color: hsl(234, 85%, 45%);
-  }
+/* visual summary section */
+main .summaries .visual h4 {
+  color: hsl(234, 85%, 45%);
+}
 
-  main .summaries .visual {
-    background-color: hsla(234, 85%, 45%, 0.1);
-  }
+main .summaries .visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
 
-  main .summaries button {
-    width: 100%;
-    padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    border: none;
-    border-radius: 30px;
-    color: hsl(221, 100%, 96%);
-    background-color: hsl(224, 30%, 27%);
-    font-size: medium;
-    font-weight: 700;
-  }
+main .summaries button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 30px;
+  color: hsl(221, 100%, 96%);
+  background-color: hsl(224, 30%, 27%);
+  font-size: medium;
+  font-weight: 700;
 }
