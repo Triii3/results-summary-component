@@ -1,6 +1,11 @@
 @media screen and (max-width: 375px) {
+  p {
+    font-size: 18px;
+    font-weight: 800;
+    opacity: 0.8;
+  }
   main .results h1,
-  main .results #text-results {
+  main .results .text-results p {
     color: hsl(241, 100%, 89%);
   }
 
@@ -15,6 +20,7 @@
 
   body {
     height: 100vh;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,9 +50,10 @@
   }
 
   main .results {
-    margin: 0;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
     align-items: center;
     text-align: center;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -54,9 +61,14 @@
     border-radius: 0 0 30px 30px;
   }
 
+  main .results h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
   main .results .circle-container {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     /*
     using percentage for height and width won't work
     since both axis are not equal
@@ -65,19 +77,48 @@
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   }
 
-  main .results .circle-container .circle {
-    width: 100%;
+  main .results .circle-container .circle h2 {
+    font-size: 3rem;
+    margin: 20px 20px 0;
   }
 
-  main .results #text-results {
+  main .results .circle-container .circle p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  main .results .text-results {
     width: 80%;
+    font-size: 1.2rem;
+  }
+
+  main .results .text-results h3 {
+    margin-bottom: 0;
+  }
+
+  main .results .text-results p {
+    margin-top: 10px;
+    font-weight: 500;
   }
 
   /* summary section */
+  main .summaries h2 {
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+
+  main .summaries p span {
+    color: black;
+  }
+  main .summaries p {
+    color: hsl(224, 30%, 27%);
+  }
   .reaction,
   .memory,
   .verbal,
   .visual {
+    height: 60px;
     display: flex;
     justify-content: space-between;
     /*
@@ -85,9 +126,15 @@
     justify-content puts them on each end with a huge space between horizontally
     */
     align-items: center;
-    padding: 0 20px;
+    padding: 0px 20px;
     border-radius: 10px;
     margin-bottom: 15px;
+  }
+
+  .left-side {
+    display: flex;
+    column-gap: 10px;
+    opacity: 0.7;
   }
 
   main .summaries {
@@ -143,6 +190,8 @@
   main .summaries button {
     width: 100%;
     padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     border: none;
     border-radius: 30px;
     color: hsl(221, 100%, 96%);
