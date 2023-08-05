@@ -1,38 +1,153 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 @media screen and (max-width: 375px) {
-  main p {
-    font-size: 18px;
+  main .results h1,
+  main .results #text-results {
+    color: hsl(241, 100%, 89%);
+  }
+
+  main .results p {
+    color: hsla(241, 100%, 89%, 0.5);
+  }
+
+  main .results h2,
+  main .results h3 {
+    color: hsl(0, 0%, 100%);
   }
 
   body {
     height: 100vh;
     display: flex;
-    text-align: center;
-    font-family: "Hanken Grotesk", sans-serif;
+    justify-content: center;
+    align-items: center;
+    /*
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    - these four attributes help center all the elements to the 
+    center of the desktop-view
+    */
   }
 
   main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*
+    display: flex;
+    align-items: center;
+
+    - centers the widths of child-elements and not starting from 
+    the left (default)
+    */
+    font-family: "Hanken Grotesk", sans-serif;
   }
 
   main .results {
-    background-color: hsl(252, 100%, 67%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    /* most of the text child-elements are centered*/
+    border-radius: 0 0 30px 30px;
   }
 
-  main .results .circle {
-    background-color: hsla(256, 72%, 46%, 1);
-    border-radius: 500px;
-    padding: 10px;
+  main .results .circle-container {
+    width: 120px;
+    height: 120px;
+    /*
+    using percentage for height and width won't work
+    since both axis are not equal
+    */
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  }
+
+  main .results .circle-container .circle {
+    width: 100%;
+  }
+
+  main .results #text-results {
+    width: 80%;
+  }
+
+  /* summary section */
+  .reaction,
+  .memory,
+  .verbal,
+  .visual {
+    display: flex;
+    justify-content: space-between;
+    /*
+    flex arranges the child-elements in a row (default)
+    justify-content puts them on each end with a huge space between horizontally
+    */
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
 
   main .summaries {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  main .summaries h2 {
+    color: hsl(224, 30%, 27%);
+  }
+
+  /* reaction summary section */
+  main .summaries .reaction h4 {
+    color: hsl(0, 100%, 67%);
+  }
+
+  main .summaries .reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    /*
+    hsla(~, ~, ~, *opacity*);
+    - helps match the colour variation of the text
+    */
+  }
+
+  /* memory summary section */
+  main .summaries .memory h4 {
+    color: hsl(39, 100%, 56%);
+  }
+
+  main .summaries .memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+  }
+
+  /* verbal summary section */
+  main .summaries .verbal h4 {
+    color: hsl(166, 100%, 37%);
+  }
+
+  main .summaries .verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+  }
+
+  /* visual summary section */
+  main .summaries .visual h4 {
+    color: hsl(234, 85%, 45%);
+  }
+
+  main .summaries .visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+  }
+
+  main .summaries button {
     width: 100%;
-    margin-right: 0;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    color: hsl(221, 100%, 96%);
+    background-color: hsl(224, 30%, 27%);
+    font-size: medium;
+    font-weight: 700;
   }
 }
