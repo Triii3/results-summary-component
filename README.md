@@ -57,8 +57,7 @@ Users should be able to:
   </section>
 </section>
 ```
-
-adding an outer div/section helps the inner contents to not be affected by centering attributes
+- adding an outer div/section helps the inner contents to not be affected by centering attributes
 
 ```css
 body {
@@ -70,13 +69,11 @@ body {
   align-items: center;
 }
 ```
-
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    - these four attributes help center all the elements to the center of the device
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+- these four attributes help center all the elements to the center of the device
 
 ```css
 main {
@@ -85,12 +82,9 @@ main {
   align-items: center;
 }
 ```
-
-    display: flex;
-    align-items: center;
-
-    - centers the widths of child-elements and not starting from
-    the left (default)
+display: flex;
+align-items: center;
+- centers the widths of child-elements and not starting from the left (default)
 
 ```css
 .circle-container {
@@ -99,17 +93,14 @@ main {
   height: 130px;
 }
 ```
-
-using percentage for height and width won't work since dimensions are not equal
+- using percentage for height and width won't work since dimensions are not equal
 
 ```css
 main .summaries .reaction {
   background-color: hsla(0, 100%, 67%, 0.1);
 }
 ```
-
 hsla(~, ~, ~, _opacity_);
-
 - helps match the colour variation of the text
 
 ```css
@@ -122,8 +113,7 @@ hsla(~, ~, ~, _opacity_);
   }
 }
 ```
-
-by using the align-items: stretch; attribute it stretch then centered all the child-sections (.results and .summaries) inside the flex-box
+- by using the align-items: stretch; attribute it stretch then centered all the child-sections (.results and .summaries) inside the flex-box
 
 ### Continued development
 
