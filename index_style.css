@@ -30,7 +30,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    - these four attributes help center all the elements to the center
+    - these four attributes help center all the elements to the center of the device
     */
 }
 
@@ -70,7 +70,7 @@ h1 {
   height: 130px;
   /*
     using percentage for height and width won't work
-    since both axis are not equal
+    since dimensions are not equal
     */
   margin-top: 10px;
   margin-bottom: 20px;
