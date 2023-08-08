@@ -1,17 +1,10 @@
-/* 
-align-items controls the alignment of 
-individual flex items within a single line, 
-while align-content controls the alignment of 
-multiple lines of flex items within a container. 
-*/
-
 p {
   font-size: 18px;
   font-weight: 800;
   opacity: 0.8;
 }
 h1,
-main .results .text-results p {
+#standing {
   color: hsl(241, 100%, 89%);
 }
 
@@ -37,8 +30,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    - these four attributes help center all the elements to the 
-    center of the desktop-view
+    - these four attributes help center all the elements to the center
     */
 }
 
@@ -60,7 +52,6 @@ main .results {
   display: flex;
   flex-direction: column;
   padding: 10px 20px 20px;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -70,15 +61,13 @@ main .results {
 
 h1 {
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .circle-container {
   display: flex;
   width: 130px;
   height: 130px;
-  align-items: center;
-  justify-content: center;
   /*
     using percentage for height and width won't work
     since both axis are not equal
@@ -98,25 +87,26 @@ h1 {
 }
 
 #result {
-  font-size: 3rem;
+  font-size: 3.7rem;
   font-weight: 700;
   opacity: 1;
   margin: 20px 20px 0;
 }
 
 #total {
+  margin-top: 0;
   font-size: 1rem;
   font-weight: 500;
 }
 
 main .results .text-results {
-  width: 100%;
+  width: 90%;
   font-size: 1.2rem;
 }
 
 #status {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
   opacity: 1;
 }
@@ -220,7 +210,6 @@ main .summaries button {
   width: 100%;
   padding: 15px;
   margin-top: 10px;
-  margin-bottom: 30px;
   border: none;
   border-radius: 30px;
   color: hsl(221, 100%, 96%);
@@ -240,6 +229,8 @@ main .summaries button:hover {
     flex-direction: row;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     align-items: stretch;
+    /* by using the align-items: stretch; attribute it stretch then centered all the child-sections 
+        (.results and .summaries) inside the flex-box */
   }
 
   main .results {
